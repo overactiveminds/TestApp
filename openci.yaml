@@ -1,0 +1,8 @@
+name: TestApp
+image: someImage
+steps:
+  - name: Build
+    cmd: dotnet
+    args:
+      - build
+      - TestApp.sln

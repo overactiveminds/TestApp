@@ -2,5 +2,5 @@ name: TestApp
 image: someImage
 steps:
   - name: Build
-    cmd: dotnet build
-    args: TestApp.sln
+    cmd: dotnet
+    args: build TestApp.sln

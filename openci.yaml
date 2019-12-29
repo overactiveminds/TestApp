@@ -3,6 +3,4 @@ image: someImage
 steps:
   - name: Build
     cmd: dotnet
-    args:
-      - build
-      - TestApp.sln
+    args: build TestApp.sln

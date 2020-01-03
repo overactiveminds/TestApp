@@ -1,9 +1,10 @@
-name: TestApp
-image: someImage
-steps:
-  - name: Build
-    cmd: dotnet
-    args: build TestApp.sln
-  - name: Build image
-    cmd: dockerbuild
-    args: TestApp\Dockerfile
+tasks:
+  -name: TestApp
+    image: someImage
+    steps:
+      - name: Build
+        cmd: dotnet
+        args: build TestApp.sln
+      - name: Build image
+        cmd: dockerbuild
+        args: TestApp\Dockerfile

@@ -6,5 +6,5 @@ tasks:
         cmd: dotnet
         args: build TestApp.sln
       - name: Build image
-        cmd: dockerbuild
-        args: TestApp\Dockerfile
+        cmd: kaniko
+        args: -f TestApp\Dockerfile
